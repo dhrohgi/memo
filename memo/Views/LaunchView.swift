@@ -8,9 +8,43 @@
 import SwiftUI
 
 struct LaunchView: View {
+    
+    @EnvironmentObject var model: ContentModel
+    
     var body: some View {
-        Text("중요한 수치들을 간단하게 볼 수 있는 앱")
-            .padding()
+        
+        if model.loggedIn == false {
+            
+            LoginView()
+                .onAppear {
+                    model.checkLogin()
+                }
+            
+        }
+        else {
+            
+            TabView {
+                
+                HomeView()
+                    .tabItem {
+                        VStack {
+                            Image(systemName: "house")
+                            Text("Home")
+                        }
+                    }
+                
+                ProfileView()
+                    .tabItem {
+                        VStack {
+                            Image(systemName: "face.smiling")
+                            Text("Profile")
+                        }
+                    }
+                
+            }
+            
+        }
+        
     }
 }
 

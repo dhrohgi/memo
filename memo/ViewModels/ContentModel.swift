@@ -6,3 +6,16 @@
 //
 
 import Foundation
+import FirebaseAuth
+
+class ContentModel: ObservableObject {
+    
+    @Published var loggedIn = false
+    
+    func checkLogin() {
+        
+        loggedIn = Auth.auth().currentUser != nil ? true : false
+        
+    }
+    
+}

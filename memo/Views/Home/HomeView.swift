@@ -1,5 +1,5 @@
 //
-//  LoginView.swift
+//  HomeView.swift
 //  memo
 //
 //  Created by dennis on 7/4/22.
@@ -7,14 +7,14 @@
 
 import SwiftUI
 
-struct LoginView: View {
+struct HomeView: View {
     var body: some View {
-        Text("Log in first please")
+        Text("This is HomeView")
     }
 }
 
-struct LoginView_Previews: PreviewProvider {
+struct HomeView_Previews: PreviewProvider {
     static var previews: some View {
-        LoginView()
+        HomeView()
     }
 }

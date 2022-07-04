@@ -17,6 +17,7 @@
 		9505E0412873478A00686797 /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9505E0402873478A00686797 /* Models.swift */; };
 		9505E0432873479F00686797 /* ContentModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9505E0422873479F00686797 /* ContentModel.swift */; };
 		9505E04528738B0200686797 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9505E04428738B0200686797 /* GoogleService-Info.plist */; };
+		9505E047287390C300686797 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9505E046287390C300686797 /* HomeView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +32,7 @@
 		9505E0402873478A00686797 /* Models.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Models.swift; sourceTree = "<group>"; };
 		9505E0422873479F00686797 /* ContentModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentModel.swift; sourceTree = "<group>"; };
 		9505E04428738B0200686797 /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "GoogleService-Info.plist"; sourceTree = SOURCE_ROOT; };
+		9505E046287390C300686797 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		E45449C981FE62B9ECD15AED /* Pods_memo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_memo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FFA1EA6703A474B785EA7B37 /* Pods-memo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-memo.release.xcconfig"; path = "Target Support Files/Pods-memo/Pods-memo.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -61,7 +63,6 @@
 				1B24FE2209F722F0573A25B1 /* Pods-memo.debug.xcconfig */,
 				FFA1EA6703A474B785EA7B37 /* Pods-memo.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -143,6 +144,7 @@
 		9505E03B287346D700686797 /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				9505E046287390C300686797 /* HomeView.swift */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -263,6 +265,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9505E03F2873474200686797 /* ProfileView.swift in Sources */,
+				9505E047287390C300686797 /* HomeView.swift in Sources */,
 				9505E03D2873473700686797 /* LoginView.swift in Sources */,
 				9505E02C287345DB00686797 /* LaunchView.swift in Sources */,
 				9505E02A287345DB00686797 /* memoApp.swift in Sources */,
