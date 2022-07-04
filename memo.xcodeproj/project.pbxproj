@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7D24A7F8D6F15F456C80E786 /* Pods_memo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E45449C981FE62B9ECD15AED /* Pods_memo.framework */; };
 		9505E02A287345DB00686797 /* memoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9505E029287345DB00686797 /* memoApp.swift */; };
 		9505E02C287345DB00686797 /* LaunchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9505E02B287345DB00686797 /* LaunchView.swift */; };
 		9505E02E287345DC00686797 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9505E02D287345DC00686797 /* Assets.xcassets */; };
@@ -15,9 +16,11 @@
 		9505E03F2873474200686797 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9505E03E2873474200686797 /* ProfileView.swift */; };
 		9505E0412873478A00686797 /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9505E0402873478A00686797 /* Models.swift */; };
 		9505E0432873479F00686797 /* ContentModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9505E0422873479F00686797 /* ContentModel.swift */; };
+		9505E04528738B0200686797 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9505E04428738B0200686797 /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1B24FE2209F722F0573A25B1 /* Pods-memo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-memo.debug.xcconfig"; path = "Target Support Files/Pods-memo/Pods-memo.debug.xcconfig"; sourceTree = "<group>"; };
 		9505E026287345DB00686797 /* memo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = memo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9505E029287345DB00686797 /* memoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = memoApp.swift; sourceTree = "<group>"; };
 		9505E02B287345DB00686797 /* LaunchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchView.swift; sourceTree = "<group>"; };
@@ -27,6 +30,9 @@
 		9505E03E2873474200686797 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
 		9505E0402873478A00686797 /* Models.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Models.swift; sourceTree = "<group>"; };
 		9505E0422873479F00686797 /* ContentModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentModel.swift; sourceTree = "<group>"; };
+		9505E04428738B0200686797 /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "GoogleService-Info.plist"; sourceTree = SOURCE_ROOT; };
+		E45449C981FE62B9ECD15AED /* Pods_memo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_memo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FFA1EA6703A474B785EA7B37 /* Pods-memo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-memo.release.xcconfig"; path = "Target Support Files/Pods-memo/Pods-memo.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -34,17 +40,38 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7D24A7F8D6F15F456C80E786 /* Pods_memo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		28A0CE6095163F2C30D58247 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E45449C981FE62B9ECD15AED /* Pods_memo.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		497AD2885C3C96C7BEA757B3 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				1B24FE2209F722F0573A25B1 /* Pods-memo.debug.xcconfig */,
+				FFA1EA6703A474B785EA7B37 /* Pods-memo.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		9505E01D287345DB00686797 = {
 			isa = PBXGroup;
 			children = (
 				9505E028287345DB00686797 /* memo */,
 				9505E027287345DB00686797 /* Products */,
+				497AD2885C3C96C7BEA757B3 /* Pods */,
+				28A0CE6095163F2C30D58247 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -64,6 +91,7 @@
 				9505E0382873467F00686797 /* ViewModels */,
 				9505E0372873467300686797 /* Models */,
 				9505E02D287345DC00686797 /* Assets.xcassets */,
+				9505E04428738B0200686797 /* GoogleService-Info.plist */,
 				9505E02F287345DC00686797 /* Preview Content */,
 			);
 			path = memo;
@@ -126,9 +154,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9505E034287345DC00686797 /* Build configuration list for PBXNativeTarget "memo" */;
 			buildPhases = (
+				717F0C8A585CAD589F036019 /* [CP] Check Pods Manifest.lock */,
 				9505E022287345DB00686797 /* Sources */,
 				9505E023287345DB00686797 /* Frameworks */,
 				9505E024287345DB00686797 /* Resources */,
+				F752F1EAA5633554AAF9A99E /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -179,10 +209,53 @@
 			files = (
 				9505E031287345DC00686797 /* Preview Assets.xcassets in Resources */,
 				9505E02E287345DC00686797 /* Assets.xcassets in Resources */,
+				9505E04528738B0200686797 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		717F0C8A585CAD589F036019 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-memo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F752F1EAA5633554AAF9A99E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-memo/Pods-memo-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-memo/Pods-memo-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-memo/Pods-memo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		9505E022287345DB00686797 /* Sources */ = {
@@ -317,6 +390,7 @@
 		};
 		9505E035287345DC00686797 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1B24FE2209F722F0573A25B1 /* Pods-memo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -346,6 +420,7 @@
 		};
 		9505E036287345DC00686797 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FFA1EA6703A474B785EA7B37 /* Pods-memo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
