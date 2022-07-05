@@ -18,6 +18,7 @@
 		9505E0432873479F00686797 /* ContentModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9505E0422873479F00686797 /* ContentModel.swift */; };
 		9505E04528738B0200686797 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9505E04428738B0200686797 /* GoogleService-Info.plist */; };
 		9505E047287390C300686797 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9505E046287390C300686797 /* HomeView.swift */; };
+		9505E04A2873971900686797 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9505E0492873971900686797 /* Constants.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,6 +34,7 @@
 		9505E0422873479F00686797 /* ContentModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentModel.swift; sourceTree = "<group>"; };
 		9505E04428738B0200686797 /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "GoogleService-Info.plist"; sourceTree = SOURCE_ROOT; };
 		9505E046287390C300686797 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		9505E0492873971900686797 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		E45449C981FE62B9ECD15AED /* Pods_memo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_memo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FFA1EA6703A474B785EA7B37 /* Pods-memo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-memo.release.xcconfig"; path = "Target Support Files/Pods-memo/Pods-memo.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -91,6 +93,7 @@
 				9505E0392873468900686797 /* Views */,
 				9505E0382873467F00686797 /* ViewModels */,
 				9505E0372873467300686797 /* Models */,
+				9505E048287396F700686797 /* Helpers */,
 				9505E02D287345DC00686797 /* Assets.xcassets */,
 				9505E04428738B0200686797 /* GoogleService-Info.plist */,
 				9505E02F287345DC00686797 /* Preview Content */,
@@ -147,6 +150,14 @@
 				9505E046287390C300686797 /* HomeView.swift */,
 			);
 			path = Home;
+			sourceTree = "<group>";
+		};
+		9505E048287396F700686797 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				9505E0492873971900686797 /* Constants.swift */,
+			);
+			path = Helpers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -271,6 +282,7 @@
 				9505E02A287345DB00686797 /* memoApp.swift in Sources */,
 				9505E0412873478A00686797 /* Models.swift in Sources */,
 				9505E0432873479F00686797 /* ContentModel.swift in Sources */,
+				9505E04A2873971900686797 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
