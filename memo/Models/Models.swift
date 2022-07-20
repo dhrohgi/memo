@@ -6,3 +6,11 @@
 //
 
 import Foundation
+
+class User {
+    
+    var name: String = ""
+    var email: String = ""
+    var clearanceLevel: Int = 1    
+    
+}

@@ -41,6 +41,14 @@ struct LaunchView: View {
                         }
                     }
                 
+                DataView()
+                    .tabItem {
+                        VStack {
+                            Image(systemName: "lock")
+                            Text("Data")
+                        }
+                    }
+                
             }
             
         }
